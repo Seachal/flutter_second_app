@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_second_app/view/App.dart';
+import 'package:flutter_second_app/view/MyApp.dart';
 
 
 
-void main() => runApp(App());
+void main() => runApp(MyApp());
 
 
-//void main() {
-// return runApp(MyApp());
-//}

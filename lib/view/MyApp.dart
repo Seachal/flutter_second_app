@@ -12,34 +12,18 @@ import 'home_page.dart';
 
 //import 'package:flutter_second_app/view/home_page.dart';
 
-class App extends StatefulWidget {
+class MyApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
-    return null;
+//    return null;
+    return AppState();
   }
 }
 
-//class AppState extends State<App> with TickerProviderStateMixin {
-//  var _pageCtr;
-//  int _tabIndex = 0;
-//  @override
-//  void initState() {
-//    _pageCtr = PageController(initialPage: 0, keepPage: true);
-//  }
-//
-//  @override
-//  void dispose() {
-//    _pageCtr.dispose();
-//    super.dispose();
-//  }
-//
-//  @override
-
-//}
 
 // 必须使用extends先继承，然后再多继承，使用关键字with
-class AppState extends State<App> with TickerProviderStateMixin {
+class AppState extends State<MyApp> with TickerProviderStateMixin {
   var _pageCtr;
   int _tabIndex = 0;
 
@@ -57,36 +41,7 @@ class AppState extends State<App> with TickerProviderStateMixin {
 //    super.dispose();
   }
 
-//
-//  @override
-//  Widget build(BuildContext context) {
-//    return MaterialApp(
-//      home: Scaffold(
-//        body: PageView(
-//          controller: _pageCtr,
-//          physics: NeverScrollableScrollPhysics(),
-//          children: <Widget>[
-//            HomePage(),
-//            ProjectPracticePage(),
-//            WechatArticlePage(),
-//          ],
-//        ),
-//        bottomNavigationBar: BottomNavigationBar(
-//            currentIndex: _tabIndex,
-//            type: BottomNavigationBarType.fixed,
-//            fixedColor: Colors.deepPurpleAccent,
-//            onTap: (index) => _tap(index),
-//            items: [
-//              BottomNavigationBarItem(
-//                  title: Text('推荐'), icon: Icon(Icons.home)),
-//              BottomNavigationBarItem(
-//                  title: Text('项目'), icon: Icon(Icons.map)),
-//              BottomNavigationBarItem(
-//                  title: Text('公众号'), icon: Icon(Icons.contact_mail)),
-//            ]),
-//      ),
-//    );
-//  }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -112,7 +67,7 @@ class AppState extends State<App> with TickerProviderStateMixin {
               BottomNavigationBarItem(
                   title: Text('推荐'), icon: Icon(Icons.home)),
               BottomNavigationBarItem(
-                  title: Text('推荐'), icon: Icon(Icons.home)),
+                  title: Text('推1'), icon: Icon(Icons.ac_unit)),
             ]),
       ),
     );

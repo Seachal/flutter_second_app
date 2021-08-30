@@ -6,25 +6,10 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
-//void main() => runApp(MyApp());
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-//    final wordPair = WordPair.random();
-//    var wordPair = WordPair.random();// 定义为变量页可以用啊。
-//    return MaterialApp(
-//      title: 'Welcome to Flutter',
-//      home: Scaffold(
-//        appBar: AppBar(
-//          title: Text('Welcome to Flutter'),
-//        ),
-//        body: Center(
-////          child: Text(wordPair.asPascalCase),
-//            child: RandomWords(),
-//        ),
-//      ),
-//    );
 
     return MaterialApp(
       title: 'Startup Name Generator',
@@ -97,17 +82,7 @@ class RandomWords extends StatefulWidget {
 
 
 
-//该runApp函数接受给定的Widget并使其成为widget树的根,  Center 就是根 widget()。
-//void main() {
-//  runApp(
-//    new Center(
-//      child: new Text(
-//        'Hello, world!',
-//        textDirection: TextDirection.ltr,
-//      ),
-//    ),
-//  );
-//}
+
 
 
 
