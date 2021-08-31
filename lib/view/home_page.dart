@@ -21,8 +21,11 @@ class HomePage extends StatelessWidget {
 class RandomWordsState extends State<RandomWords>{
 
 
+
+
   final _suggestions = <WordPair>[];
   final _biggerFont = const TextStyle(fontSize: 18.0);
+  final Set<WordPair> _saved = new Set<WordPair>();   // 新增本行
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -55,11 +58,16 @@ class RandomWordsState extends State<RandomWords>{
   }
 
   Widget _buildRow(WordPair pair) {
+    final bool alreadySaved = _saved.contains(pair);  // 新增本行
     return ListTile(
       title: Text(
         pair.asPascalCase,
         style: _biggerFont,
       ),
+      trailing: new Icon(   // 新增代码开始 ...
+        alreadySaved ? Icons.favorite : Icons.favorite_border,
+        color: alreadySaved ? Colors.red : null,
+      ),                    // ... 新增代码结束
     );
   }
 

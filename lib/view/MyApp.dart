@@ -22,7 +22,7 @@ class MyApp extends StatefulWidget {
 }
 
 
-// 必须使用extends先继承，然后再多继承，使用关键字with
+// 必须使用extends先继承，然后再多继承，使用关键字with 。 mixins 特性
 class AppState extends State<MyApp> with TickerProviderStateMixin {
   var _pageCtr;
   int _tabIndex = 0;
